@@ -1,12 +1,11 @@
-.calc__container {
-}
+
 
 .calc__grid{
     display: grid;
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(100px, auto)repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto)repeat(5, 100px);
     min-height: 100vh;
     grid-gap: 3px 3px;
 }
@@ -31,4 +30,6 @@
 }
 
 .calc__output {
+    grid-column: 1 /-1;
+    min-height: 50px;
 }
