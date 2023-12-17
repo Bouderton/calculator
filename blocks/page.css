@@ -6,7 +6,7 @@
 }
 
 .page__content {
-    margin: 50px auto;
+    margin: auto;
     max-width: 1200px;
     min-width: 320px;
 }

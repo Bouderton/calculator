@@ -1,13 +1,12 @@
-
-
 .calc__grid{
     display: grid;
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(100px, auto)repeat(5, 100px);
-    min-height: 100vh;
+    min-height: 100%;
     grid-gap: 3px 3px;
+    margin: auto;
 }
 
 .calc__grid-btn {
@@ -29,7 +28,18 @@
     border-radius: 12px;
 }
 
+.calc__span-two:hover {
+    cursor: pointer;
+}
+
 .calc__output {
     grid-column: 1 /-1;
     min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    background: darkblue;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-radius: 8px; 
+
 }
