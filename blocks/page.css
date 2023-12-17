@@ -1,0 +1,12 @@
+.page {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page__content {
+    margin: 50px auto;
+    max-width: 1200px;
+    min-width: 320px;
+}
