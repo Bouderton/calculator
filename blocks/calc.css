@@ -11,7 +11,7 @@
 
 .calc__grid-btn {
     max-width: 125px; 
-    font-size: 20px;
+    font-size: 25px;
     border: none;
     border-radius: 12px;
     
@@ -19,17 +19,19 @@
 
 .calc__grid-btn:hover {
     cursor: pointer;
+    transform: scale(1.1)
 }
 
 .calc__span-two {
     grid-column: span 2;
-    font-size: 20px;
+    font-size: 25px;
     border: none;
     border-radius: 12px;
 }
 
 .calc__span-two:hover {
     cursor: pointer;
+    transform: scale(1.1)
 }
 
 .calc__output {
@@ -42,4 +44,14 @@
     justify-content: space-between;
     border-radius: 8px; 
 
+}
+
+.calc__output-preop {
+    font-size: 35px;
+    color: white;
+}
+
+.calc__output-currop {
+    font-size: 35px;
+    color: white;
 }
