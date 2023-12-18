@@ -10,11 +10,9 @@
 }
 
 .calc__grid-btn {
-    max-width: 125px; 
     font-size: 25px;
     border: none;
-    border-radius: 12px;
-    
+    border-radius: 12px; 
 }
 
 .calc__grid-btn:hover {
@@ -49,9 +47,11 @@
 .calc__output-preop {
     font-size: 35px;
     color: white;
+    padding: 5px;
 }
 
 .calc__output-currop {
     font-size: 35px;
     color: white;
+    padding: 5px;
 }
