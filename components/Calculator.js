@@ -1,14 +1,24 @@
 export default class Calculator  {
-    constructor(){
-
+    constructor(previousOpText, currentOpText){
+    this.previousOpText = previousOpText;
+    this.currenOpText = currentOpText;
+    this.clear();
     }
 
-    clear(){}
+    clear(){
+        this.previousOp = '';
+        this.currentOp= '';
+        this.operation = undefined;
+    }
 
     delete(){}
 
-    appendNumber(){}
+    appendNumber(number){}
 
-    choseOperation(){}
+    choseOperation(operation){}
+
+    compute(){}
+    
+    updateDisplay(){}
 
 }
