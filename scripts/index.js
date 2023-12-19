@@ -8,4 +8,4 @@ const numbers = document.querySelectorAll('[data-number]');
 const previousOperand = document.querySelector('[data-prev-op]');
 const currentOperand = document.querySelector('[data-curr-op');
 const clear = document.querySelector('[data-clear]');
-const equals = docuemnt.querySelector('[data-equals]');
+const equals = document.querySelector('[data-equals]');
