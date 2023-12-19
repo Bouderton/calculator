@@ -5,6 +5,7 @@ const settingBtns= document.querySelectorAll('.calc__span-two');
 
 const operations = document.querySelectorAll('[data-operation]');
 const numbers = document.querySelectorAll('[data-number]');
-
-console.log(numbers);
-console.log(operations);
+const previousOperand = document.querySelector('[data-prev-op]');
+const currentOperand = document.querySelector('[data-curr-op');
+const clear = document.querySelector('[data-clear]');
+const equals = docuemnt.querySelector('[data-equals]');
