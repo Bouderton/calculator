@@ -9,3 +9,11 @@ const previousOperand = document.querySelector('[data-prev-op]');
 const currentOperand = document.querySelector('[data-curr-op');
 const clear = document.querySelector('[data-clear]');
 const equals = document.querySelector('[data-equals]');
+
+numbers.forEach((number) => {
+    number.addEventListener('click', () => {
+        console.log(number);
+    });
+});
+
+console.log(numbers);
