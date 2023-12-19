@@ -16,4 +16,3 @@ numbers.forEach((number) => {
     });
 });
 
-console.log(numbers);
