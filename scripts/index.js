@@ -2,6 +2,7 @@ import Calculator from '../components/Calculator.js';
 
 const numberBtns = document.querySelectorAll('.calc__grid-btn');
 const settingBtns= document.querySelectorAll('.calc__span-two');
+const deleteBtn = document.querySelector('[data-delete]');
 
 const operations = document.querySelectorAll('[data-operation]');
 const numbers = document.querySelectorAll('[data-number]');
@@ -15,5 +16,23 @@ numbers.forEach((number) => {
         console.log(number);
     });
 });
+
+operations.forEach((op) => {
+    op.addEventListener('click', () => {
+        console.log(op);
+    })
+})
+
+equals.addEventListener('click', () => {
+    console.log(equals);
+});
+
+clear.addEventListener('click', () => {
+    console.log(clear);
+});
+
+deleteBtn.addEventListener('click', () => {
+    console.log(deleteBtn)
+;})
 
 const theCalculator = new Calculator(); 
