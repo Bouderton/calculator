@@ -13,7 +13,9 @@ export default class Calculator  {
 
     delete(){}
 
-    appendNumber(number){}
+    appendNumber(number){
+        
+    }
 
     choseOperation(operation){}
 

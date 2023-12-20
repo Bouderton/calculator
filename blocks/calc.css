@@ -6,7 +6,7 @@
     grid-template-rows: minmax(100px, auto)repeat(5, 100px);
     min-height: 100%;
     grid-gap: 3px 3px;
-    margin: auto;
+    margin: auto auto 15px;
 }
 
 .calc__grid-btn {
