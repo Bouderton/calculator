@@ -16,3 +16,4 @@ numbers.forEach((number) => {
     });
 });
 
+const theCalculator = new Calculator(); 
