@@ -38,4 +38,4 @@ deleteBtn.addEventListener('click', () => {
 console.log(previousOperand);
 console.log(currentOperand);
 
-const theCalculator = new Calculator(); 
+const theCalculator = new Calculator(previousOpText, currentOpText); 
