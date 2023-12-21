@@ -1,7 +1,7 @@
 export default class Calculator  {
     constructor(previousOpText, currentOpText){
     this.previousOpText = previousOpText;
-    this.currenOpText = currentOpText;
+    this.currentOpText = currentOpText;
     this.clear();
     }
 
@@ -14,13 +14,15 @@ export default class Calculator  {
     delete(){}
 
     appendNumber(number){
-        
+        this.currentOperand = this.currentOperand.toString() + number.toString();
     }
 
     choseOperation(operation){}
 
     compute(){}
     
-    updateDisplay(){}
+    updateDisplay(){
+        this.currentOpText.innerText = this.currentOperand
+    }
 
 }

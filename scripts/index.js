@@ -13,7 +13,8 @@ const equals = document.querySelector('[data-equals]');
 
 numbers.forEach((number) => {
     number.addEventListener('click', () => {
-        console.log(number);
+        theCalculator.appendNumber(number.innerText)
+        theCalculator.updateDisplay();
     });
 });
 
@@ -38,4 +39,5 @@ deleteBtn.addEventListener('click', () => {
 console.log(previousOperand);
 console.log(currentOperand);
 
-const theCalculator = new Calculator(previousOpText, currentOpText); 
+const theCalculator = new Calculator(previousOperand, currentOperand); 
+
