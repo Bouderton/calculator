@@ -6,15 +6,15 @@ const deleteBtn = document.querySelector('[data-delete]');
 
 const operations = document.querySelectorAll('[data-operation]');
 const numbers = document.querySelectorAll('[data-number]');
-const previousOperand = document.querySelector('[data-prev-op]');
-const currentOperand = document.querySelector('[data-curr-op');
+const previousOperand = document.querySelector('[data-previous-operand]');
+const currentOperand = document.querySelector('[data-current-operand]');
 const clear = document.querySelector('[data-clear]');
 const equals = document.querySelector('[data-equals]');
 
 numbers.forEach((number) => {
     number.addEventListener('click', () => {
-        theCalculator.appendNumber(number.innerText)
-        theCalculator.updateDisplay();
+        calculator.appendNumber(number.innerText)
+        calculator.updateDisplay();
     });
 });
 
@@ -39,5 +39,5 @@ deleteBtn.addEventListener('click', () => {
 console.log(previousOperand);
 console.log(currentOperand);
 
-const theCalculator = new Calculator(previousOperand, currentOperand); 
+const calculator = new Calculator(previousOperand, currentOperand); 
 

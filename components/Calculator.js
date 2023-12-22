@@ -6,8 +6,8 @@ export default class Calculator  {
     }
 
     clear(){
-        this.previousOp = '';
-        this.currentOp= '';
+        this.previousOpText = '';
+        this.currentOpText= '';
         this.operation = undefined;
     }
 
