@@ -14,7 +14,7 @@ export default class Calculator  {
     delete(){}
 
     appendNumber(number){
-        this.currentOperand = this.currentOperand.toString() + number.toString();
+       this.currentOpText = number;
     }
 
     choseOperation(operation){}
@@ -22,7 +22,7 @@ export default class Calculator  {
     compute(){}
     
     updateDisplay(){
-        this.currentOpText.innerText = this.currentOperand
+        this.currentOpText.innerText = this.currentOpText
     }
 
 }

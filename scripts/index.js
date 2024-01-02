@@ -36,8 +36,5 @@ deleteBtn.addEventListener('click', () => {
     console.log(deleteBtn)
 ;})
 
-console.log(previousOperand);
-console.log(currentOperand);
-
 const calculator = new Calculator(previousOperand, currentOperand); 
 
