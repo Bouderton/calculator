@@ -5,7 +5,13 @@
   text-align: center;
 }
 
-.logo {
+.calc__header {
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -39,4 +45,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

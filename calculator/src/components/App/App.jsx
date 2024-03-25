@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>SHITTY CALCULATOR INCOMING</h1>
+        <h1 className="calc__header">SHITTY CALCULATOR INCOMING</h1>
         <Calculator />
       </div>
     </>
