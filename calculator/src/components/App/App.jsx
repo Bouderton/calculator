@@ -8,7 +8,13 @@ import Button from "../Button/Button";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const btnValues = [
+    ["C", "+-", "%", "/"],
+    [7, 8, 9, "X"],
+    [4, 5, 6, "-"],
+    [1, 2, 3, "+"],
+    [0, ".", "="],
+  ];
 
   return (
     <>
@@ -17,13 +23,18 @@ function App() {
         <Calculator>
           <Screen value={0} />
           <ButtonGrid>
-            <Button
-              value={0}
-              className=""
-              onClick={() => {
-                console.log("Click");
-              }}
-            />
+            {btnValues.flat().map((btn, i) => {
+              return (
+                <Button
+                  key={i}
+                  className={btn === "=" ? "equals" : ""}
+                  value={btn}
+                  onClick={() => {
+                    console.log(`${btn} clicked!`);
+                  }}
+                />
+              );
+            })}
           </ButtonGrid>
         </Calculator>
       </div>
